@@ -10,7 +10,10 @@
 
     <!-- ============= SwiperJS Stylesheet ============= -->
     <link rel="stylesheet" href="./style/swiper.css">
+    <!-- ============= Css Style sheet -->
     <link rel="stylesheet" href="./style/style.css">
+    <!--  ============= REMIX icons ========== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
 
 </head>
 
@@ -18,30 +21,44 @@
     <!-- Menu section -->
 
     <nav>
-        <div><a href="#"><img src="./images/logo.jpg" alt="logo,álmos lajhár" class="logo_img"></a> </div>
-        <div class="menu">
-            <ul>
-                <li class="menu-item"><a href="#about">Rólam</a></li>
-                <li class="menu-item"><a href="#skills">Amiben jó vagyok</a></li>
-                <li class="menu-item"><a href="#home">Ahol élek</a></li>
-                <li class="menu-item"><a href="#family">Családi napló</a></li>
-                <li class="menu-item"><a href="#gallery">Képek</a></li>
-                <li class="menu-item"><a href="#contact">Üzenet</a></li>
-            </ul>
+        <div class="nav_container">
+            <div><a href="#"><img src="./images/logo.jpg" alt="logo,álmos lajhár" class="logo_img"></a> </div>
+            <div class="menu">
+                <ul>
+                    <li class="menu-item"><a class="active" href="#about">Rólam</a></li>
+                    <li class="menu-item"><a href="#skills">Amiben jó vagyok</a></li>
+                    <li class="menu-item"><a href="#home">Ahol élek</a></li>
+                    <li class="menu-item"><a href="#family">Családi napló</a></li>
+                    <li class="menu-item"><a href="#gallery">Képek</a></li>
+                    <li class="menu-item"><a href="#contact">Üzenet</a></li>
+                    <i class="ri-close-fill close"></i>
+                </ul>
+            </div>
         </div>
+        <div class="nav_hamburger"><i class="ri-menu-line"></i></div>
     </nav>
 
     <!--  header section -->
 
     <header>
-        <h1>Üdvözlet Lajhi oldalán!</h1>
+        <div class="header_container">
+            <h1>Üdvözlet</h1>
+            <h2> Lajhi oldalán!</h2>
+        </div>
+        <div class="social_container">
+            <a href=""><i class="ri-facebook-circle-fill"></i></a>
+            <a href=""><i class="ri-instagram-fill"></i></a>
+            <a href=""><i class="ri-twitter-fill"></i></a>
+        </div>
     </header>
 
     <!--  ============================== MAIN SECTION ======================= -->
     <main>
         <!-- about section -->
         <article class="about" id="about">
-            <h2 class="heading_title">Üdv, Lajhi vagyok!</h2>
+            <div class="heading_title">
+                <h2>Üdv, Lajhi vagyok!</h2>
+            </div>
             <section class="about_section">
                 <div class="about_left">
                     <img src="./images/profil.jpg" alt="profil kép, lajhár">
@@ -66,7 +83,9 @@
 
         <!--  skills section -->
         <article class="skills" id="skills">
-            <h2 class="heading_title">Amiben jó vagyok</h2>
+            <div class="heading_title">
+                <h2>Amiben jó vagyok</h2>
+            </div>
             <section class="skills_section">
 
                 <div class="skill_card">
@@ -108,7 +127,9 @@
 
         <!--  home section -->
         <article class="home" id="home">
-            <h2 class="heading_title">Ahol élek</h2>
+            <div class="heading_title">
+                <h2>Ahol élek</h2>
+            </div>
             <div class="home_container">
                 <img src="./images/zoo.jpg" alt="álltkert">
             </div>
@@ -117,31 +138,51 @@
 
         <!--  family section -->
         <article class="family" id="family">
-            <h2 class="heading_title">Családi napló</h2>
-            <p>Avagy a lajhárok rövid története</p>
-            <div class="home_container">
-                <img src="./images/family.jpg" alt="álltkert">
-                <div class="family_content">
-                    <p>Hajdan a főemlősök közé sorolták a lajhárokat majmokra emlékeztető külső megjelenésük és szinte
-                        emberi arckifejezésük miatt. Valójában a hangyászokkal és tatukkal együtt a vendégízületesek
-                        (Xenarthra) közé tartoznak egy közös anatómiai jellegzetességük alapján. Esőerdők lombkoronáján
-                        élnek, este mozognak, természetesen lajhárlassúsággal.</p>
-                    <p>Életük legnagyobb részét azzal töltik, hogy faágakról lógnak fejjel lefelé, csak abban az esetben
-                        másznak le a talajra, ha például a táplálék miatt egy új fára költöznek, vagy ürítenek.
-                        Átlagosan 15 órát alszanak, éjjel is csak táplálkozás céljából kelnek fel. Általában csendes
-                        állatok, de amikor szomorúak, akkor különböző sziszegő, halk síró hangokat adnak ki.</p>
-                    <p>A lajhárok nagyon jól mozognak a fákon, és jól úsznak. Áramvonalas testük és szőrük a nedves,
-                        trópusi időjáráshoz alkalmazkodva fejlődött ki. Köztudottan a karmaikkal és fogaikkal védik meg
-                        magukat. A barna bundájukat zöld színnel árnyalják a rajtuk megtelepedő algák, ami a
-                        rejtőzködésben segíti őket. Gyümölcsökkel, levelekkel táplálkoznak, ritkán tojást és rovarokat
-                        is fogyasztanak.</p>
-                    <p>Alapvetően magányosan élő állatok, bár több nőstény is megtelepedhet ugyanazon a fán. Évente
-                        egyszer ellenek. A megszülető lajhárkölyök az anyja hasán csüng 5 hetes koráig, míg elég erős
-                        nem lesz az önálló mozgáshoz. A nőstények 3, míg a hímek 4-5 éves korukban válnak ivaréretté. Az
-                        utódok rendszerint a szüleik közelében maradnak, megöröklik a területüket.</p>
-                    <p>Az esőerdők nagymértékű fakitermelése következtében folyamatosan csökken az életterük, ezáltal
-                        súlyos veszély fenyegeti a kétujjú lajhárokat. A természetben 20, míg Állatkertekben 30-40 évig
-                        is élhetnek.</p>
+            <div class="heading_title">
+                <h2>Családi napló</h2>
+                <p>Avagy a lajhárok rövid története</p>
+            </div>
+            <div class="family_container">
+                <div class="family_top">
+                    <img src="./images/family.jpg" alt="álltkert">
+                    <div class="family_content-top">
+                        <p>Hajdan a főemlősök közé sorolták a lajhárokat majmokra emlékeztető külső megjelenésük és
+                            szinte
+                            emberi arckifejezésük miatt. Valójában a hangyászokkal és tatukkal együtt a vendégízületesek
+                            (Xenarthra) közé tartoznak egy közös anatómiai jellegzetességük alapján. Esőerdők
+                            lombkoronáján
+                            élnek, este mozognak, természetesen lajhárlassúsággal.</p>
+                        <p>Életük legnagyobb részét azzal töltik, hogy faágakról lógnak fejjel lefelé, csak abban az
+                            esetben
+                            másznak le a talajra, ha például a táplálék miatt egy új fára költöznek, vagy ürítenek.
+                            Átlagosan 15 órát alszanak, éjjel is csak táplálkozás céljából kelnek fel. Általában csendes
+                            állatok, de amikor szomorúak, akkor különböző sziszegő, halk síró hangokat adnak ki.</p>
+                        <p>A lajhárok nagyon jól mozognak a fákon, és jól úsznak. Áramvonalas testük és szőrük a nedves,
+                            trópusi időjáráshoz alkalmazkodva fejlődött ki. Köztudottan a karmaikkal és fogaikkal védik
+                            meg
+                            magukat. </p>
+                    </div>
+                </div>
+                <div class="family_bottom">
+                    <div class="family_content-top">
+                        <p>A barna bundájukat zöld színnel árnyalják a rajtuk megtelepedő algák, ami a
+                            rejtőzködésben segíti őket. Gyümölcsökkel, levelekkel táplálkoznak, ritkán tojást és
+                            rovarokat
+                            is fogyasztanak.</p>
+                        <p>Alapvetően magányosan élő állatok, bár több nőstény is megtelepedhet ugyanazon a fán. Évente
+                            egyszer ellenek. A megszülető lajhárkölyök az anyja hasán csüng 5 hetes koráig, míg elég
+                            erős
+                            nem lesz az önálló mozgáshoz. A nőstények 3, míg a hímek 4-5 éves korukban válnak
+                            ivaréretté. Az
+                            utódok rendszerint a szüleik közelében maradnak, megöröklik a területüket.</p>
+                        <p>Az esőerdők nagymértékű fakitermelése következtében folyamatosan csökken az életterük,
+                            ezáltal
+                            súlyos veszély fenyegeti a kétujjú lajhárokat. A természetben 20, míg Állatkertekben 30-40
+                            évig
+                            is élhetnek.</p>
+
+                    </div>
+                    <img src="./images/sleepy.jpg" alt="álmos lajhár">
                 </div>
             </div>
         </article>
@@ -149,7 +190,9 @@
 
         <!--  gallery section -->
         <article class="gallery" id="gallery">
-            <h2 class="heading_title">Képek</h2>
+            <div class="heading_title">
+                <h2>Képek</h2>
+            </div>
             <section class="gallery_content">
 
                 <div class="swiper-button-prev"></div>
@@ -172,13 +215,15 @@
 
         <!--  contact section -->
         <article class="contact" id="contact">
-            <h2 class="heading_title">Küldj üzenetet</h2>
+            <div class="heading_title">
+                <h2>Küldj üzenetet</h2>
+            </div>
             <div class="contact_content">
-                <form action="#">
+                <form action="#" id="myForm">
                     <input type="text" name="nev" id="nev" placeholder="Név">
                     <input type="email" name="email" id="email" placeholder="Email cím">
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Üzenet.."></textarea>
-                    <input type="submit" value="Küldés">
+                    <input class="btn" type="submit" value="Küldés">
                 </form>
             </div>
         </article>
@@ -199,7 +244,8 @@
             </ul>
         </div>
         <div class="copyright">
-            <p>Minden jog fenntartva! &copy;2023 <a href="https://thomashorvath.hu" target="_blank">ThomasHorvath.hu</a>
+            <p>Minden jog fenntartva! &copy;2023 <a href="https://thomashorvath.hu" target="_blank">
+                    ThomasHorvath.hu</a>
             </p>
         </div>
     </footer>
