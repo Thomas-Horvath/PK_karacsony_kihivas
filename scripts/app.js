@@ -89,3 +89,12 @@ window.addEventListener("scroll", () => {
     showScrollUpBtn();
 
 });
+
+const cartOpen = document.querySelector('.cart_wrapper');
+const cartClose = document.querySelector('.close_btn')
+const cart = document.querySelector('.cart_content');
+[cartOpen, cartClose].forEach((btn) => {
+    btn.addEventListener("click", () => {
+        cart.classList.toggle("open");
+    });
+});
