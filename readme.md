@@ -1,3 +1,3 @@
-# Programozás Karrire 2023 Karácsonyi kihívása
+# Programozás Karrire, 2023 Christmas challenge. 
 
-## Póbéld kia a demót ezen a [linken](https://thomas-horvath.github.io/PK_karacsony_kihivas/)!
+## Try the demo at the following [link](https://thomas-horvath.github.io/PK_karacsony_kihivas/)!
