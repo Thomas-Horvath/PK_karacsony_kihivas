@@ -114,6 +114,15 @@ nav {
 .menu-item {
     position: relative;
 }
+.home_btn {
+    font-size: 2rem;
+    color: var(--bg);
+    cursor:pointer;
+    transition: .3s ease;
+}
+.home_btn:hover {
+    color:var(--yellow);
+}
 
 .menu-item::after {
     position: absolute;
@@ -732,6 +741,7 @@ h4 {
     gap: 1rem;
     padding: 0 1rem;
     cursor: pointer;
+    box-shadow: inset 2px 2px 2px #22222277;
 
 }
 
