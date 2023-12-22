@@ -45,7 +45,9 @@ menu.addEventListener("transitionend", function () {
 
 
 
+
 /* menu links scroll active */
+
 const artickles = document.querySelectorAll("article");
 const navLinks = document.querySelector('.menu-item a');
 
@@ -68,8 +70,12 @@ window.addEventListener('scroll', () => {
 });
 
 
+
+
+
 /*  scroll up button function*/
 const scrollUpBtn = document.querySelector(".scrollUp");
+
 function showScrollUpBtn() {
     if (window.scrollY > 100) {
         scrollUpBtn.classList.add("show");
@@ -83,6 +89,12 @@ scrollUpBtn.addEventListener("click", () => window.scrollTo({ behavior: "smooth"
 window.addEventListener("scroll", () => {
     showScrollUpBtn();
 });
+
+
+
+
+
+
 
 /* cart content */
 let currentPath = window.location.pathname;

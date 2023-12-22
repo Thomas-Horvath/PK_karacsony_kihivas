@@ -50,25 +50,44 @@ body {
     font-family: "montserrat", "san-serif";
 }
 
-img {
-    width: 400px;
-}
-
 a {
     text-decoration: none;
     color: inherit;
 }
 
-
+/* titles of articles */
 .heading_title {
     text-align: center;
-    font-weight: 6700;
+    font-weight: 700;
     padding-top: 6rem;
 }
 
 .heading_title h2 {
     display: inline-block;
     font-size: 3.5rem;
+}
+
+
+/* all buttons */
+.btn {
+    background-color: var(--yellow);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px #333;
+}
+
+.btn:hover {
+    background-color: #fff24d;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.9);
 }
 
 
@@ -114,14 +133,16 @@ nav {
 .menu-item {
     position: relative;
 }
+
 .home_btn {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--bg);
-    cursor:pointer;
+    cursor: pointer;
     transition: .3s ease;
 }
+
 .home_btn:hover {
-    color:var(--yellow);
+    color: var(--yellow);
 }
 
 .menu-item::after {
@@ -158,6 +179,9 @@ nav {
 .close {
     display: none;
 }
+
+
+
 
 /* =====================  HEADER SECTION ======================== */
 header {
@@ -240,6 +264,8 @@ h1 {
 .social_container i:hover {
     color: var(--third-color);
 }
+
+
 
 
 /*  =================== ABOUT SECTION ===================== */
@@ -339,6 +365,11 @@ h1 {
     padding: 0 1rem 1rem;
 }
 
+
+
+
+
+
 /*  =================== HOME SECTION ============== */
 .home {
     padding-bottom: 2rem;
@@ -356,6 +387,9 @@ h1 {
 .home_container img {
     width: 100%;
 }
+
+
+
 
 
 
@@ -409,6 +443,9 @@ h1 {
     font-size: 1.17rem;
     font-weight: 500;
 }
+
+
+
 
 
 /*  ========== GALLERY SECTION ====================  */
@@ -538,26 +575,7 @@ textarea {
     min-height: 9rem;
 }
 
-.btn {
-    background-color: var(--yellow);
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    box-shadow: 5px 5px 5px #333;
-}
 
-.btn:hover {
-    background-color: #fff24d;
-    cursor: pointer;
-}
-
-.btn:active {
-    transform: scale(0.9);
-}
 
 
 /*  ============ FOOTER SECTION ==============  */
@@ -640,12 +658,16 @@ footer {
     visibility: visible;
 }
 
+
+
+
+
+
 /*  ============ PRODUCTS SECTION ==================*/
 .products {
     min-height: 100vh;
     background-color: var(--bg);
     text-align: center;
-
 }
 
 .products h2 {
@@ -672,7 +694,6 @@ footer {
     border: 2px solid var(--dark-brown);
     border-radius: 6px;
     overflow: hidden;
-
 }
 
 .product_card img {
@@ -687,7 +708,6 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .product_card h3,
@@ -742,7 +762,6 @@ h4 {
     padding: 0 1rem;
     cursor: pointer;
     box-shadow: inset 2px 2px 2px #22222277;
-
 }
 
 .cart_content {
@@ -776,6 +795,10 @@ h4 {
     opacity: 1;
 }
 
+
+
+
+/*  ========================= MEDIA QUERIES ============================== */
 @media screen and (max-width: 1200px) {
     nav {
         padding: .5rem 2rem;
@@ -797,6 +820,8 @@ h4 {
     }
 }
 
+
+
 @media screen and (max-width: 981px) {
     nav {
         padding: .5rem 1rem;
@@ -811,7 +836,7 @@ h4 {
         top: 0;
         transform: translateX(100%);
         border-left: 2px solid var(--bg);
-
+        padding-top: 3rem;
     }
 
     .menu-item:hover {
@@ -938,6 +963,7 @@ h4 {
 
 }
 
+
 @media screen and (max-width: 600px) {
     .product_list {
         flex-direction: column;
@@ -945,6 +971,7 @@ h4 {
         gap: 1rem;
     }
 }
+
 
 @media screen and (max-width: 400px) {
     header {

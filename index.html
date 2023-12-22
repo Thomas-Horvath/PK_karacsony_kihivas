@@ -13,7 +13,7 @@
     <!-- ============= Css Style sheet -->
     <link rel="stylesheet" href="./style/style.css">
     <!--  ============= REMIX icons ========== -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
@@ -25,15 +25,15 @@
             <div><a href="#"><img src="./images/logo.jpg" alt="logo,álmos lajhár" class="logo_img"></a> </div>
             <div class="menu">
                 <ul>
+                    <li class="menu-item"><a href="#"><i class="ri-home-4-line home_btn"></i></a></li>
                     <li class="menu-item"><a href="#about">Rólam</a></li>
                     <li class="menu-item"><a href="#skills">Amiben jó vagyok</a></li>
                     <li class="menu-item"><a href="#home">Ahol élek</a></li>
                     <li class="menu-item"><a href="#family">Családi napló</a></li>
                     <li class="menu-item"><a href="#gallery">Képek</a></li>
                     <li class="menu-item"><a href="#contact">Üzenet</a></li>
-                    <a href="#"><i class="ri-home-4-line home_btn"></i></a>
-                    <i class="ri-close-fill close"></i>
                 </ul>
+                <i class="ri-close-fill close"></i>
             </div>
         </div>
         <div class="nav_hamburger"><i class="ri-menu-line"></i></div>
@@ -46,7 +46,7 @@
             <h1>Üdvözlet</h1>
             <h2> Lajhi oldalán!</h2>
         </div>
-       <a class="shop" href="./shop.html"> Irány a webshop <i class="ri-arrow-right-line"></i></a>
+        <a class="shop" href="./shop.html"> Irány a webshop <i class="ri-arrow-right-line"></i></a>
         <div class="social_container">
             <a href="https://facebook.com" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="ri-instagram-fill"></i></a>
@@ -133,7 +133,7 @@
                 <h2>Ahol élek</h2>
             </div>
             <div class="home_container">
-                <img src="./images/zoo.jpg" alt="álltkert">
+                <img src="./images/zoo.jpg" alt="állatkert">
             </div>
         </article>
 
@@ -146,7 +146,7 @@
             </div>
             <div class="family_container">
                 <div class="family_top">
-                    <img src="./images/family.jpg" alt="álltkert">
+                    <img src="./images/family.jpg" alt="állatkert">
                     <div class="family_content-top">
                         <p>Hajdan a főemlősök közé sorolták a lajhárokat majmokra emlékeztető külső megjelenésük és
                             szinte
@@ -200,13 +200,13 @@
                 <div class="swiper-button-prev"></div>
                 <div class="gallery_slider swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./images/gallery/1.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/gallery/2.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/gallery/3.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/gallery/4.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/gallery/5.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/gallery/6.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/gallery/7.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/gallery/1.jpg" alt="lajhár"></div>
+                        <div class="swiper-slide"><img src="./images/gallery/2.jpg" alt="lajhár"></div>
+                        <div class="swiper-slide"><img src="./images/gallery/3.jpg" alt="lajhár"></div>
+                        <div class="swiper-slide"><img src="./images/gallery/4.jpg" alt="lajhár"></div>
+                        <div class="swiper-slide"><img src="./images/gallery/5.jpg" alt="lajhár"></div>
+                        <div class="swiper-slide"><img src="./images/gallery/6.jpg" alt="lajhár"></div>
+                        <div class="swiper-slide"><img src="./images/gallery/7.jpg" alt="lajhár"></div>
                     </div>
                     <div class="gallery_slider-pagination swiper-pagination"></div>
                 </div>
@@ -225,7 +225,7 @@
                     <input type="text" name="nev" id="nev" placeholder="Név">
                     <input type="email" name="email" id="email" placeholder="Email cím">
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Üzenet.."></textarea>
-                    <input class="btn" type="submit" value="Küldés">
+                    <input class="btn" type="button" value="Küldés">
                 </form>
             </div>
         </article>
@@ -255,10 +255,11 @@
         <a class="scrollUp" href="#"><i class="ri-arrow-up-line"></i></a>
     </abbr>
 
-
-    <script src="./scripts/swiper.js"></script>
-    <script src="./scripts/app.js"></script>
     <!-- ============= SwiperJS ============= -->
+    <script src="./scripts/swiper.js"></script>
+    <!-- ============= app.js ============= -->
+    <script src="./scripts/app.js"></script>
+
 
 </body>
 
