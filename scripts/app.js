@@ -19,14 +19,6 @@ const gallery = new Swiper(".gallery_slider", {
 });
 
 
-/* Button submit event */
-document.getElementById("myForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-    console.log("Gombra kattintva, de az oldal nem töltődik újra!");
-});
-
-
-
 
 /*  hamburger menu */
 
@@ -79,3 +71,21 @@ window.addEventListener('scroll', () => {
     });
 });
 
+
+/*  scroll up */
+const scrollUpBtn = document.querySelector(".scrollUp");
+function showScrollUpBtn() {
+    if (window.scrollY > 100) {
+        scrollUpBtn.classList.add("show");
+    } else {
+        scrollUpBtn.classList.remove("show");
+    }
+}
+
+scrollUpBtn.addEventListener("click", () => window.scrollTo({ behavior: "smooth", top: 0, left: 0 }))
+
+window.addEventListener("scroll", () => {
+
+    showScrollUpBtn();
+
+});

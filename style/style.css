@@ -73,12 +73,11 @@ a {
 }
 
 
-/*  nav */
+/*  =============  NAVIGATION SECTION ==============*/
 nav {
     position: fixed;
     width: 100%;
     display: flex;
-
     background-color: var(--main-color);
     padding: .5rem 4rem;
     align-items: center;
@@ -91,8 +90,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
-
 }
 
 .logo_img {
@@ -109,7 +106,6 @@ nav {
 }
 
 .menu-item {
-
     color: var(--text-color-light);
     font-size: 1.4rem;
     font-weight: 600;
@@ -138,12 +134,8 @@ nav {
 }
 
 .active {
-
     color: var(--yellow);
-
 }
-
-
 
 .menu-item:hover {
     color: var(--yellow);
@@ -214,6 +206,9 @@ h1 {
     padding: 2rem;
 }
 
+.social_container i:hover {
+    color: var(--third-color);
+}
 
 
 /*  =================== ABOUT SECTION ===================== */
@@ -229,15 +224,15 @@ h1 {
     width: 40px;
     height: 40px;
     background: url();
-
 }
+
 
 .about_section {
     padding: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
 
@@ -258,7 +253,7 @@ h1 {
 }
 
 .about_right p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -296,12 +291,13 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 10px 7px 20px var(--brown);
-
+    text-align: center;
 }
 
 .skill_card img {
     width: 100%;
     box-shadow: 0 2px 5px var(--brown);
+
 }
 
 .skill_card-title {
@@ -446,7 +442,7 @@ h1 {
     }
 
     .swiper-slide img {
-        max-width: 100%;
+        width: 100%;
         height: 100%;
     }
 
@@ -501,6 +497,15 @@ textarea {
     background-color: var(--box-bg);
     font-size: 1.4rem;
 
+
+}
+
+input:active,
+textarea:active,
+input:focus,
+textarea:focus {
+
+    outline: none;
 }
 
 textarea {
@@ -564,6 +569,53 @@ footer {
 
 
 
+.scrollUp {
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 11;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+
+
+.scrollrUp abbr {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+
+}
+
+.scrollUp i {
+
+    font-weight: 700;
+    font-size: 2rem;
+    transition: .3s ease;
+}
+
+.scrollUp:hover i {
+    transform: translateY(-5px);
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 
 @media screen and (max-width: 1200px) {
     nav {
@@ -572,6 +624,17 @@ footer {
 
     .menu-item {
         font-size: 1rem;
+    }
+
+    .contact_content {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .skills_section,
+    .family_container {
+        border-radius: 0;
     }
 }
 
@@ -588,9 +651,11 @@ footer {
         border-left: 2px solid var(--bg);
 
     }
+
     .menu-item:hover {
         color: var(--yellow);
     }
+
     .menu-item:hover::after {
         width: 0;
         left: 0;
@@ -654,6 +719,22 @@ footer {
         padding: .3rem;
     }
 
+
+    .about_section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .about_left {
+        width: 70%;
+    }
+
+    .about_right {
+        width: 100%;
+        text-align: center;
+    }
+
+
     .family_container {
         border-radius: 0;
     }
@@ -668,6 +749,7 @@ footer {
     .family_content-bottom,
     .family_content-top {
         width: 100%;
+        text-align: center;
     }
 
     footer,
@@ -681,6 +763,7 @@ footer {
         font-size: 1rem;
         gap: .3rem;
     }
+
 }
 
 
@@ -711,20 +794,11 @@ footer {
         font-size: 2rem;
     }
 
-    .about_section {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
     .about_left {
         width: 100%;
     }
 
-    ;
 
-    .about_right {
-        width: 100%;
-    }
 
     .skills_section {
         padding: 1rem;
