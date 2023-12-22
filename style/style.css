@@ -829,7 +829,7 @@ h4 {
 
     .menu {
         position: absolute;
-        width: 300px;
+        width: 400px;
         height: 100vh;
         background-color: var(--main-color);
         right: 0;
@@ -850,7 +850,7 @@ h4 {
 
     .menu-item {
         border-bottom: 2px solid var(--bg);
-        width: 80%;
+        width: 60%;
         text-align: center;
         font-size: 1.5rem;
     }
@@ -864,7 +864,7 @@ h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
     }
 
     .close {
